@@ -1,0 +1,57 @@
+[
+  {
+    "description": "  I want to check through a simple e2e test the Testim page",
+    "keyword": "Feature",
+    "name": "Exploratory testing on Testim page",
+    "line": 1,
+    "id": "exploratory-testing-on-testim-page",
+    "tags": [],
+    "uri": "E2ETestim.feature",
+    "elements": [
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 830000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "15 January 2021",
+                      "2 April 2021",
+                      "3",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "failed",
+              "duration": 1152000000,
+              "error_message": "CypressError: `cy.contains()` can only accept a string, number or regular expression.\n    at Context.contains (http://demo.testim.io/__cypress/runner/cypress_runner.js:158342:19)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:146:3)\n    at Context.resolveAndRunStepDefinition (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:10653:9)\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:9994:35)\nFrom Your Spec Code:\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:146:3)\n    at Context.resolveAndRunStepDefinition (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:10653:9)\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:9994:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
