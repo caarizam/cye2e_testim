@@ -1,0 +1,347 @@
+[
+  {
+    "description": "  I want to check through a simple e2e test the Testim page",
+    "keyword": "Feature",
+    "name": "Exploratory testing on Testim page",
+    "line": 1,
+    "id": "exploratory-testing-on-testim-page",
+    "tags": [],
+    "uri": "E2ETestim.feature",
+    "elements": [
+      {
+        "id": "exploratory-testing-on-testim-page;checking-the-login-functionality",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Checking the login functionality",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 10381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "The client attempts to login with username \"carl@yopmail.com\" and \"123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 3309000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 397000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "15 January 2021",
+                      "2 April 2021",
+                      "3",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "passed",
+              "duration": 5547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Madan\" and the \"Green\"",
+            "result": {
+              "status": "passed",
+              "duration": 1669000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Carlos",
+                      "carl@yopmail.com",
+                      "123-22-4444",
+                      "1(844)6182852"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 7814000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 431000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "12 December 2020",
+                      "30 January 2021",
+                      "2",
+                      "2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "passed",
+              "duration": 4825000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Shenji\" and the \"Red\"",
+            "result": {
+              "status": "passed",
+              "duration": 1351000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Camila",
+                      "camila@yopmail.com",
+                      "123-22-4445",
+                      "1(844)6182853"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 8105000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 731000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "1 March 2021",
+                      "23 March 2021",
+                      "4",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "passed",
+              "duration": 5296000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Tongli\" and the \"Blue\"",
+            "result": {
+              "status": "passed",
+              "duration": 1295000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Mike",
+                      "mike@yopmail.com",
+                      "123-22-4446",
+                      "1(844)6182854"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 7636000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 475000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "19 March 2021",
+                      "12 April 2021",
+                      "1",
+                      "4"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "passed",
+              "duration": 5806000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Flagstaff\" and the \"Brown\"",
+            "result": {
+              "status": "passed",
+              "duration": 1492000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "John",
+                      "john@yopmail.com",
+                      "123-22-4447",
+                      "1(844)6182855"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 7313000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

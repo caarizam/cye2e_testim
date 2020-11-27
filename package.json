@@ -1,0 +1,35 @@
+{
+  "name": "cye2e_testim",
+  "version": "1.0.0",
+  "description": "Cypress IO E2E test for Testim",
+  "main": "index.js",
+  "scripts": {
+    "test:cy": "./node_modules/.bin/cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run --spec \"**/*.feature\" --browser chrome",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caarizam/cye2e_testim.git"
+  },
+  "author": "Carlos Ariza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caarizam/cye2e_testim/issues"
+  },
+  "homepage": "https://github.com/caarizam/cye2e_testim#readme",
+  "devDependencies": {
+    "cypress": "^6.0.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  }
+}
