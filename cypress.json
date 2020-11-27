@@ -1,8 +1,6 @@
 {
-  "video":false,
+  "video": true,
   "chromeWebSecurity": false,
-
-
   "testFiles": "**/*.feature",
   "env": {
     "basePage": "http://demo.testim.io/"

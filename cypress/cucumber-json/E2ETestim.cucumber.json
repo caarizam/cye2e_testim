@@ -9,10 +9,10 @@
     "uri": "E2ETestim.feature",
     "elements": [
       {
-        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "id": "exploratory-testing-on-testim-page;checking-the-login-functionality",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Customizing a dream journey to the space",
+        "line": 5,
+        "name": "Checking the login functionality",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,37 @@
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 6010000000
+              "duration": 9928000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "The client attempts to login with username \"carl@yopmail.com\" and \"123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 3437000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 736000000
             }
           },
           {
@@ -42,12 +72,44 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
+            "line": 11,
             "name": "The client selects the dates and the travelers",
             "result": {
-              "status": "failed",
-              "duration": 5975000000,
-              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>2</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
+              "status": "passed",
+              "duration": 7050000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Madan\" and the \"Green\"",
+            "result": {
+              "status": "passed",
+              "duration": 1934000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Carlos",
+                      "carl@yopmail.com",
+                      "123-22-4444",
+                      "1(844)6182852"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 8072000000
             }
           }
         ]
@@ -55,7 +117,7 @@
       {
         "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 21,
         "name": "Customizing a dream journey to the space",
         "tags": [],
         "type": "scenario",
@@ -63,11 +125,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 10,
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 745000000
+              "duration": 747000000
             }
           },
           {
@@ -86,12 +148,44 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
+            "line": 11,
             "name": "The client selects the dates and the travelers",
             "result": {
-              "status": "failed",
-              "duration": 5292000000,
-              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>30</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
+              "status": "passed",
+              "duration": 5803000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Shenji\" and the \"Red\"",
+            "result": {
+              "status": "passed",
+              "duration": 1536000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Camila",
+                      "camila@yopmail.com",
+                      "123-22-4445",
+                      "1(844)6182853"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 8489000000
             }
           }
         ]
@@ -99,7 +193,7 @@
       {
         "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
         "keyword": "Scenario",
-        "line": 14,
+        "line": 22,
         "name": "Customizing a dream journey to the space",
         "tags": [],
         "type": "scenario",
@@ -107,11 +201,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 10,
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 732000000
+              "duration": 1464000000
             }
           },
           {
@@ -130,12 +224,44 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
+            "line": 11,
             "name": "The client selects the dates and the travelers",
             "result": {
-              "status": "failed",
-              "duration": 5700000000,
-              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>23</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
+              "status": "passed",
+              "duration": 6440000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Tongli\" and the \"Blue\"",
+            "result": {
+              "status": "passed",
+              "duration": 1934000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Mike",
+                      "mike@yopmail.com",
+                      "123-22-4446",
+                      "1(844)6182854"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 7661000000
             }
           }
         ]
@@ -143,7 +269,7 @@
       {
         "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
         "keyword": "Scenario",
-        "line": 15,
+        "line": 23,
         "name": "Customizing a dream journey to the space",
         "tags": [],
         "type": "scenario",
@@ -151,11 +277,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 10,
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 1067000000
+              "duration": 760000000
             }
           },
           {
@@ -174,12 +300,44 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
+            "line": 11,
             "name": "The client selects the dates and the travelers",
             "result": {
-              "status": "failed",
-              "duration": 5723000000,
-              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>12</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
+              "status": "passed",
+              "duration": 6439000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The client selects \"Flagstaff\" and the \"Brown\"",
+            "result": {
+              "status": "passed",
+              "duration": 1941000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "John",
+                      "john@yopmail.com",
+                      "123-22-4447",
+                      "1(844)6182855"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The client completes the checkout information",
+            "result": {
+              "status": "passed",
+              "duration": 7845000000
             }
           }
         ]

@@ -9,8 +9,6 @@ class HomePage{
     //Date Picker PopUp
     datePickerDeparting = "Departing";
     datePickerReturning = "Returning";
-    //dateDepartingPickerMonth = "div[data-react-toolbox='calendar'] div[data-react-toolbox='month'] > span";
-    //dateReturningPickerMonth = "div[data-react-toolbox='calendar'] div[data-react-toolbox='month'] > span:nth-child(1)";
 
     departingValueInput = "div.Hero__date-picker-box___RaqVV:nth-child(1) > div:nth-child(2) > div > input"
     returningValueInput = "div.Box__box___2XzJ2:nth-child(2) > div:nth-child(2) > div > input"
@@ -24,10 +22,40 @@ class HomePage{
     //Months
     months = ["January", "February", "March", "April", "May", "June", "July", "August", "October", "September", "November", "December"];
 
+    //Launch and Color
+    launchDropDown = "input[value='Launch']";
+    launchDropDownOptions = "div.theme__dropdown___co-4M:nth-child(1) > ul";
+    colorDropDown = "input[value='Planet color']";
+    colorDropDownOptions = "div.theme__dropdown___co-4M:nth-child(2) > ul";
+
+    //cards item
+    cardSingleItem = "div.theme__card___2nWQb"
+    bookButton = "button.theme__button___1iKuo:nth-child(2)"
+
+    //Login
+    loginLink = ".NavButton__nav-button___34wHC"
+    usernameLoginTextField = "div.Login__field___2oefU:nth-child(1) > input"
+    passwordLoginTextField = "div.Login__field___2oefU:nth-child(2) > input"
+    loginButton = "button.LoginButton__button___1Sd3Q:nth-child(2)"
+    afterLoginLink = ".mui-btn"
+
+    /**
+     * This method allows getting the index of the month e.g. March = 3
+     * @param month
+     * @returns {number}
+     */
     getMonthIndex(month){
         return this.months.indexOf(month) + 1;
     }
 
+    /**
+     * This method allows calculating the number of clicks to get a month and year given
+     * @param currentYear
+     * @param expectedYear
+     * @param currentMonth
+     * @param expectedMonth
+     * @returns {number}
+     */
     getClicksCalendar(currentYear, expectedYear, currentMonth, expectedMonth){
 
         let years = Math.abs(currentYear - expectedYear) * 12;
@@ -50,10 +78,21 @@ class HomePage{
 
     }
 
+    /**
+     * This method opens the date picker Departing or Returning
+     * @param datePicker
+     * @returns {Promise<void>}
+     */
     async openDatePicker(datePicker){
         await cy.get(this.datePickerButton, {timeout: 5 * 1000}).contains(datePicker).prev().prev().click();
     }
 
+    /**
+     * This method allows setting up the dates for Departing and Returning parameters
+     * @param inputDates
+     * @param inputValues
+     * @returns {Promise<void>}
+     */
     async setDepartingReturningDate(inputDates, inputValues){
 
         let datesArray = inputDates.split(" ");
@@ -90,14 +129,23 @@ class HomePage{
                     incrementDecrement--;
 
                     if(nextPrev === true){
-                        cy.get(this.datePickerNextMonth, {timeout: 7 * 1000}).click();
+                        cy.get(this.datePickerNextMonth, {timeout: 7 * 1000})
+                            .should('be.visible')
+                            .click({ force: true });
                     }else{
-                        cy.get(this.datePickerPrevMonth, {timeout: 7 * 1000}).click();
+                        cy.get(this.datePickerPrevMonth, {timeout: 7 * 1000})
+                            .should('be.visible')
+                            .click({ force: true });
                     }
                 }
             });
 
-        await cy.get(this.datePickerDay, { timeout: 5 * 1000 }).contains(expectedDay, { timeout: 5 * 1000 }).click();
+        await cy.get(this.datePickerDay, { timeout: 5 * 1000 })
+            .find("span")
+            .contains(expectedDay, { timeout: 5 * 1000 })
+            .should('be.visible')
+            .click({ force: true });
+
         await cy.get(this.datePickerOk, { timeout: 5 * 1000 }).click();
 
         await cy.get(inputValues, { timeout: 5 * 1000 })
