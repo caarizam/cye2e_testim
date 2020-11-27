@@ -9,7 +9,8 @@ Given("The client is on the Home Page", () => {
     cy.get(homePage.headLabel, {timeout: 8 * 1000});
 });
 
-When("The client selects the dates and the travelers", async (dataTable) => {
+When("The client selects the dates and the travelers",
+    async (dataTable) => {
 
     let departing = dataTable.rawTable[0][0]
     let returning = dataTable.rawTable[0][1]
@@ -65,7 +66,8 @@ When("The client selects the dates and the travelers", async (dataTable) => {
 
 });
 
-When("The client selects {string} and the {string}", async(launch, planetColor) => {
+When("The client selects {string} and the {string}",
+    async(launch, planetColor) => {
 
     await cy.get(homePage.launchDropDown).click();
     await cy.get(homePage.launchDropDownOptions, { timeout: 5 * 1000 })
@@ -92,7 +94,8 @@ When("The client selects {string} and the {string}", async(launch, planetColor) 
 
 });
 
-When("The client attempts to login with username {string} and {string}", async(username, password) => {
+When("The client attempts to login with username {string} and {string}",
+    async(username, password) => {
 
     await cy.get(homePage.loginLink).click();
     await cy.get(homePage.usernameLoginTextField, { timeout: 5 * 1000 }).clear().type(username, { delay: 100 });

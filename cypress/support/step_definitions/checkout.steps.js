@@ -1,9 +1,10 @@
-import {Given, When, And} from "cypress-cucumber-preprocessor/steps";
+import { And } from "cypress-cucumber-preprocessor/steps";
 import CheckoutPage from "../pages/CheckoutPage";
 
 const checkoutPage = new CheckoutPage();
 
-And("The client completes the checkout information", async(dataTable) => {
+And("The client completes the checkout information",
+    async(dataTable) => {
     let name = dataTable.rawTable[0][0]
     let email = dataTable.rawTable[0][1]
     let socialNumber = dataTable.rawTable[0][2]
