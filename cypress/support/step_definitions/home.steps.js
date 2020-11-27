@@ -9,106 +9,62 @@ Given("The client is on the Home Page", () => {
     cy.get(homePage.headLabel, {timeout: 8 * 1000});
 });
 
-When("The client selects the dates and the travelers", (dataTable) => {
-    var departing = dataTable.rawTable[0][0]
-    var returning = dataTable.rawTable[0][1]
-    var adultsQty = dataTable.rawTable[0][2]
-    var childrenQty = dataTable.rawTable[0][3]
+When("The client selects the dates and the travelers", async (dataTable) => {
 
-    var departArray = departing.split(" ");
-    var departExpectedYear = departArray[2];
-    var departExpectedMonth = departArray[1];
-    var departExpectedDay = departArray[0];
+    let departing = dataTable.rawTable[0][0]
+    let returning = dataTable.rawTable[0][1]
+    let adultsQty = dataTable.rawTable[0][2]
+    let childrenQty = dataTable.rawTable[0][3]
 
-    var returningArray = returning.split(" ");
-    var retExpectedYear = returningArray[2];
-    var retExpectedMonth = returningArray[1];
-    var retExpectedDay = returningArray[0];
-
-    var nextPrev = true; //if false Previous if true Next
-
-    var tmpDateArray;
-    var incrementDecrement = 0;
-    var currentDate = "";
-    var currentYear = "";
-    var currentMonth = "";
+    let departArray = departing.split(" ");
+    let returningArray = returning.split(" ");
 
     expect(homePage.months.includes(departArray[1])).to.be.true;
     expect(homePage.months.includes(returningArray[1])).to.be.true;
 
     //Selecting departing date
-    cy.get(homePage.departingButton, {timeout: 5 * 1000}).contains("Departing").prev().prev().click();
+    await homePage.openDatePicker(homePage.datePickerDeparting);
+    await homePage.setDepartingReturningDate(departing, homePage.departingValueInput);
 
+    //Selecting returning date
+    await homePage.openDatePicker(homePage.datePickerReturning);
+    await homePage.setDepartingReturningDate(returning, homePage.returningValueInput);
 
-    cy.get(homePage.datePickerMonth, {timeout: 5 * 1000})
-        .invoke('text')
-        .then((text) => {
-            currentDate = text;
-            console.log("currentDate: " + currentDate);
-            tmpDateArray = currentDate.split(" ");
-            currentYear = tmpDateArray[1].trim();
-            currentMonth = tmpDateArray[0].trim();
+    //selecting adults
+    await cy.get(homePage.adultsDropDown, { timeout: 3 * 1000 }).click();
 
-            incrementDecrement = homePage.getClicksCalendar(currentYear, departExpectedYear, currentMonth, departExpectedMonth);
+    await cy.get(homePage.adultsDropDownOptions)
+        //.should('be.visible')
+        .invoke('attr', 'style', 'visibility: visible')
+        .should('have.attr', 'style', 'visibility: visible')
 
-            if(incrementDecrement < 0){
-                nextPrev = false;
-            }
+        .find("li")
+        .contains("" + adultsQty, {timeout: 5 * 1000})
+        .click({force: true});
 
-            incrementDecrement = Math.abs(incrementDecrement);
-
-            while(incrementDecrement > 0){
-                incrementDecrement--;
-
-                if(nextPrev === true){
-                    cy.get(homePage.datePickerNextMonth, {timeout: 7 * 1000}).click({delay:2});
-                }else{
-                    cy.get(homePage.datePickerPrevMonth, {timeout: 7 * 1000}).click({delay:2});
-                }
-            }
-
-            cy.get(homePage.datePickerDay, { timeout: 5 * 1000 }).contains(departExpectedDay).click();
-            cy.get(homePage.datePickerOk, { timeout: 5 * 1000 }).click();
-
+    await cy.get(homePage.adultsDropDown, { timeout: 3 * 1000 })
+        .invoke('val')
+        .then((val) => {
+            expect(adultsQty).to.be.equal(val);
         });
 
-    homePage.setDepartingReturningDate();
-    //Selecting returning date
-    /*cy.get(homePage.departingButton, {timeout: 5 * 1000}).contains("Returning").prev().prev().click();
+    //selecting children
+    await cy.get(homePage.childrenDropDown, { timeout: 3 * 1000 }).click();
 
+    await cy.get(homePage.childrenDropDownOptions)
+        //.should('be.visible')
+        .invoke('attr', 'style', 'visibility: visible')
+        .should('have.attr', 'style', 'visibility: visible')
 
-    cy.get(homePage.datePickerMonth, {timeout: 5 * 1000})
-        .invoke('text')
-        .then((text) => {
-            currentDate = text;
-            console.log("currentDate: " + currentDate);
-            tmpDateArray = currentDate.split(" ");
-            currentYear = tmpDateArray[1].trim();
-            currentMonth = tmpDateArray[0].trim();
+        .find("li")
+        .contains("" + childrenQty, {timeout: 5 * 1000})
+        .click({force: true});
 
-            incrementDecrement = homePage.getClicksCalendar(currentYear, departExpectedYear, currentMonth, departExpectedMonth);
-
-            if(incrementDecrement < 0){
-                nextPrev = false;
-            }
-
-            incrementDecrement = Math.abs(incrementDecrement);
-
-            while(incrementDecrement > 0){
-                incrementDecrement--;
-
-                if(nextPrev === true){
-                    cy.get(homePage.datePickerNextMonth, {timeout: 7 * 1000}).click({delay:2});
-                }else{
-                    cy.get(homePage.datePickerPrevMonth, {timeout: 7 * 1000}).click({delay:2});
-                }
-            }
-
-            cy.get(homePage.datePickerDay, { timeout: 5 * 1000 }).contains(departExpectedDay).click();
-            cy.get(homePage.datePickerOk, { timeout: 5 * 1000 }).click();
-
-        });*/
-
+    await cy.get(homePage.childrenDropDown, { timeout: 3 * 1000 })
+        .invoke('val')
+        .then((val) => {
+            expect(childrenQty).to.be.equal(val);
+        });
 
 });
 

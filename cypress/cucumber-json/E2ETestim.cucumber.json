@@ -23,7 +23,7 @@
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 830000000
+              "duration": 6010000000
             }
           },
           {
@@ -46,8 +46,140 @@
             "name": "The client selects the dates and the travelers",
             "result": {
               "status": "failed",
-              "duration": 1152000000,
-              "error_message": "CypressError: `cy.contains()` can only accept a string, number or regular expression.\n    at Context.contains (http://demo.testim.io/__cypress/runner/cypress_runner.js:158342:19)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:146:3)\n    at Context.resolveAndRunStepDefinition (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:10653:9)\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:9994:35)\nFrom Your Spec Code:\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:146:3)\n    at Context.resolveAndRunStepDefinition (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:10653:9)\n    at Context.eval (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:9994:35)"
+              "duration": 5975000000,
+              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>2</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 745000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "12 December 2020",
+                      "30 January 2021",
+                      "2",
+                      "2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "failed",
+              "duration": 5292000000,
+              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>30</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 732000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "1 March 2021",
+                      "23 March 2021",
+                      "4",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "failed",
+              "duration": 5700000000,
+              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>23</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "exploratory-testing-on-testim-page;customizing-a-dream-journey-to-the-space",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Customizing a dream journey to the space",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "The client is on the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 1067000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "19 March 2021",
+                      "12 April 2021",
+                      "1",
+                      "4"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "The client selects the dates and the travelers",
+            "result": {
+              "status": "failed",
+              "duration": 5723000000,
+              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>12</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.contains()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (http://demo.testim.io/__cypress/runner/cypress_runner.js:161156:24)\n    at runAllChecks (http://demo.testim.io/__cypress/runner/cypress_runner.js:150111:12)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150178:16)\nFrom previous event:\n    at tryFn (http://demo.testim.io/__cypress/runner/cypress_runner.js:165579:21)\n    at whenStable (http://demo.testim.io/__cypress/runner/cypress_runner.js:165617:12)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:165112:16\nFrom previous event:\n    at $Cy.retry (http://demo.testim.io/__cypress/runner/cypress_runner.js:165092:38)\n    at retryActionability (http://demo.testim.io/__cypress/runner/cypress_runner.js:150181:19)\n    at http://demo.testim.io/__cypress/runner/cypress_runner.js:150183:7\nFrom previous event:\n    at Object.verify (http://demo.testim.io/__cypress/runner/cypress_runner.js:150102:21)\n    at perform (http://demo.testim.io/__cypress/runner/cypress_runner.js:152143:29)\nFrom previous event:\n    at mouseAction (http://demo.testim.io/__cypress/runner/cypress_runner.js:152181:20)\n    at Context.click (http://demo.testim.io/__cypress/runner/cypress_runner.js:152200:14)\n    at Context.<anonymous> (http://demo.testim.io/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)\nFrom Your Spec Code:\n    at HomePage._callee2$ (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:182:20)\n    at tryCatch (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:521:40)\n    at Generator.invoke [as _invoke] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:747:22)\n    at Generator.prototype.<computed> [as next] (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:573:21)\n    at asyncGeneratorStep (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:334:24)\n    at _next (http://demo.testim.io/__cypress/tests?p=cypress\\integration\\features\\E2ETestim.feature:356:9)"
             }
           }
         ]
