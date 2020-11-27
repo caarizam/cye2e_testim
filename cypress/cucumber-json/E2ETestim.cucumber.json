@@ -23,7 +23,7 @@
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 9928000000
+              "duration": 10381000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "The client attempts to login with username \"carl@yopmail.com\" and \"123456\"",
             "result": {
               "status": "passed",
-              "duration": 3437000000
+              "duration": 3309000000
             }
           }
         ]
@@ -53,7 +53,7 @@
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 736000000
+              "duration": 397000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "The client selects the dates and the travelers",
             "result": {
               "status": "passed",
-              "duration": 7050000000
+              "duration": 5547000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "The client selects \"Madan\" and the \"Green\"",
             "result": {
               "status": "passed",
-              "duration": 1934000000
+              "duration": 1669000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "The client completes the checkout information",
             "result": {
               "status": "passed",
-              "duration": 8072000000
+              "duration": 7814000000
             }
           }
         ]
@@ -129,7 +129,7 @@
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 747000000
+              "duration": 431000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "The client selects the dates and the travelers",
             "result": {
               "status": "passed",
-              "duration": 5803000000
+              "duration": 4825000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "The client selects \"Shenji\" and the \"Red\"",
             "result": {
               "status": "passed",
-              "duration": 1536000000
+              "duration": 1351000000
             }
           },
           {
@@ -185,7 +185,7 @@
             "name": "The client completes the checkout information",
             "result": {
               "status": "passed",
-              "duration": 8489000000
+              "duration": 8105000000
             }
           }
         ]
@@ -205,7 +205,7 @@
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 1464000000
+              "duration": 731000000
             }
           },
           {
@@ -228,7 +228,7 @@
             "name": "The client selects the dates and the travelers",
             "result": {
               "status": "passed",
-              "duration": 6440000000
+              "duration": 5296000000
             }
           },
           {
@@ -238,7 +238,7 @@
             "name": "The client selects \"Tongli\" and the \"Blue\"",
             "result": {
               "status": "passed",
-              "duration": 1934000000
+              "duration": 1295000000
             }
           },
           {
@@ -261,7 +261,7 @@
             "name": "The client completes the checkout information",
             "result": {
               "status": "passed",
-              "duration": 7661000000
+              "duration": 7636000000
             }
           }
         ]
@@ -281,7 +281,7 @@
             "name": "The client is on the Home Page",
             "result": {
               "status": "passed",
-              "duration": 760000000
+              "duration": 475000000
             }
           },
           {
@@ -304,7 +304,7 @@
             "name": "The client selects the dates and the travelers",
             "result": {
               "status": "passed",
-              "duration": 6439000000
+              "duration": 5806000000
             }
           },
           {
@@ -314,7 +314,7 @@
             "name": "The client selects \"Flagstaff\" and the \"Brown\"",
             "result": {
               "status": "passed",
-              "duration": 1941000000
+              "duration": 1492000000
             }
           },
           {
@@ -337,7 +337,7 @@
             "name": "The client completes the checkout information",
             "result": {
               "status": "passed",
-              "duration": 7845000000
+              "duration": 7313000000
             }
           }
         ]
