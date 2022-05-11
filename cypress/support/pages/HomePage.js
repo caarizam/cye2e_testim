@@ -20,7 +20,7 @@ class HomePage{
     datePickerCancel = "nav[role='navigation'] > button:nth-child(1)";
 
     //Months
-    months = ["January", "February", "March", "April", "May", "June", "July", "August", "October", "September", "November", "December"];
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     //Launch and Color
     launchDropDown = "input[value='Launch']";

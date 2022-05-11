@@ -16,8 +16,8 @@ Feature: Exploratory testing on Testim page
 
 
     Examples: Data to customize the journey
-      | departing        | returning       | adults | children | launch    | color | name   | email              | socialNumber | phone         |
-      | 15 January 2021  | 2 April 2021    | 3      | 1        | Madan     | Green | Carlos | carl@yopmail.com   | 123-22-4444  | 1(844)6182852 |
-      | 12 December 2020 | 30 January 2021 | 2      | 2        | Shenji    | Red   | Camila | camila@yopmail.com | 123-22-4445  | 1(844)6182853 |
-      | 1 March 2021     | 23 March 2021   | 4      | 1        | Tongli    | Blue  | Mike   | mike@yopmail.com   | 123-22-4446  | 1(844)6182854 |
-      | 19 March 2021    | 12 April 2021   | 1      | 4        | Flagstaff | Brown | John   | john@yopmail.com   | 123-22-4447  | 1(844)6182855 |
+      | departing        | returning         | adults | children | launch    | color | name   | email              | socialNumber | phone         |
+      | 15 August 2022   | 2 October 2022    | 3      | 1        | Madan     | Green | Carlos | carl@yopmail.com   | 123-22-4444  | 1(844)6182852 |
+      | 12 July 2022     | 22 August 2022    | 2      | 2        | Shenji    | Red   | Camila | camila@yopmail.com | 123-22-4445  | 1(844)6182853 |
+      | 1 September 2022 | 23 September 2022 | 4      | 1        | Tongli    | Blue  | Mike   | mike@yopmail.com   | 123-22-4446  | 1(844)6182854 |
+      | 19 August 2022   | 12 October 2022   | 1      | 4        | Flagstaff | Brown | John   | john@yopmail.com   | 123-22-4447  | 1(844)6182855 |
