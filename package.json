@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/caarizam/cye2e_testim#readme",
   "devDependencies": {
-    "cypress": "^6.0.0",
-    "cypress-cucumber-preprocessor": "^4.0.0"
+    "cypress": "^9.6.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }
